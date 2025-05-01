@@ -15,18 +15,18 @@ const Header: React.FC = () => {
           />
         </Link>
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-yellow-600 transition-colors">
+          <Link to="/" className="hover:text-furia-orange transition-colors">
             Início
           </Link>
-          <Link to="/#noticias" className="hover:text-yellow-600 transition-colors">
+          <Link to="/#noticias" className="hover:text-furia-orange transition-colors">
             Notícias
           </Link>
-          <Link to="/#sobre" className="hover:text-yellow-600 transition-colors">
+          <Link to="/#sobre" className="hover:text-furia-orange transition-colors">
             Sobre
           </Link>
         </nav>
         <Link to="/cadastro">
-          <Button variant="default" className="bg-yellow-600 hover:bg-yellow-700 text-white">
+          <Button variant="default" className="bg-furia-orange hover:bg-furia-orange/90 text-white">
             Acessar Chatbot
           </Button>
         </Link>
