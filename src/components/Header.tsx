@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           </Link>
         </nav>
         <Link to="/cadastro">
-          <Button variant="default" className="bg-furia-orange hover:bg-furia-orange/90 text-white">
+          <Button variant="default" className="bg-furia-orange hover:bg-furia-orange/90 text-black">
             Acessar Chatbot
           </Button>
         </Link>
