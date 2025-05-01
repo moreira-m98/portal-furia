@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
               </Button>
             </Link>
             <Link to="/cadastro">
-              <Button variant="outline" className="border-white text-white hover:text-furia-orange hover:border-furia-orange text-lg px-8 py-6">
+              <Button variant="outline" className="border-white text-black hover:text-furia-orange hover:border-furia-orange text-lg px-8 py-6">
                 Acessar Chatbot
               </Button>
             </Link>
