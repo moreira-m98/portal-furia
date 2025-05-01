@@ -55,7 +55,7 @@ const newsData = [
     description: "A equipe feminina da FURIA conquistou um importante título internacional neste fim de semana. Com uma atuação dominante na final, as jogadoras brasileiras mostraram por que são consideradas uma das melhores equipes do mundo.",
     category: "FURIA Feminina",
     date: "20 de abril, 2024",
-    imageUrl: "https://images.unsplash.com/photo-1615922997411-354fa5a36cc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://www.comboinfinito.com.br/principal/wp-content/uploads/2020/08/furia-cs-masters.jpg",
   },
 ];
 
