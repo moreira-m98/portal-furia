@@ -1,19 +1,4 @@
-# Bem-vindo ao seu projeto Lovable
-Informações do projeto
-URL: https://lovable.dev/projects/470b3469-2323-4c2c-b9dc-50f7bf9a52b1
-
-Como posso editar este código?
-Existem várias formas de editar sua aplicação.
-
-Usar o Lovable
-
-Basta visitar o Projeto no Lovable e começar a escrever comandos (prompts).
-
-As alterações feitas via Lovable serão automaticamente commitadas neste repositório.
-
-Usar seu IDE preferido
-
-Se preferir trabalhar localmente com seu próprio ambiente de desenvolvimento (IDE), você pode clonar este repositório e enviar (push) as alterações. As mudanças enviadas também aparecerão no Lovable.
+# Bem-vindo ao meu projeto
 
 O único requisito é ter o Node.js e o npm instalados – instale com nvm
 
@@ -67,10 +52,6 @@ shadcn-ui
 Tailwind CSS
 
 Como posso publicar (deploy) este projeto?
-Basta abrir o Lovable e clicar em Compartilhar -> Publicar.
-
-Posso conectar um domínio personalizado ao meu projeto Lovable?
-Sim, pode!
 
 Para conectar um domínio, vá até Projeto > Configurações > Domínios e clique em "Conectar Domínio".
 
