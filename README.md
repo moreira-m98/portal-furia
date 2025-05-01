@@ -1,4 +1,4 @@
-Bem-vindo ao seu projeto Lovable
+# Bem-vindo ao seu projeto Lovable
 Informações do projeto
 URL: https://lovable.dev/projects/470b3469-2323-4c2c-b9dc-50f7bf9a52b1
 
