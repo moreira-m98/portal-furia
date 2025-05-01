@@ -65,7 +65,7 @@ export default {
 				},
 				furia: {
 					black: "#000000",
-					orange: "#FF5500",
+					orange: "#FFD700", // Changed from #FF5500 to gold (#FFD700)
 					gray: "#333333",
 					lightGray: "#F5F5F5",
 				}
