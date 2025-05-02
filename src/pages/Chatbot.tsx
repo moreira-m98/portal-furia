@@ -51,7 +51,7 @@ const Chatbot: React.FC = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (input.trim() === "") return;
 
     // Add user message
@@ -66,29 +66,44 @@ const Chatbot: React.FC = () => {
     setInput("");
     setIsTyping(true);
 
-    // Simulate bot response after delay
-    setTimeout(() => {
-      const botResponses = [
-        `Olá ${registrationData.personalInfo.name}! Vamos falar sobre a FURIA?`,
-        "A FURIA é uma das maiores organizações de esports do Brasil!",
-        "Nossa equipe de CS2 está se preparando para o próximo Major.",
-        "Você sabia que a FURIA tem equipes em vários jogos diferentes?",
-        "Estamos sempre em busca de novos talentos para nossas equipes.",
-        "Você pode acompanhar todas as novidades da FURIA em nossas redes sociais!",
-      ];
+    try {
+      // Make API call to the endpoint
+      const response = await fetch("http://localhost:8000/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: input }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+
+      const data = await response.json();
       
-      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
-      
+      // Add bot response
       const botMessage: Message = {
         id: Date.now().toString(),
-        content: randomResponse,
+        content: data.response,
         sender: "bot",
         timestamp: new Date(),
       };
       
       setMessages((prev) => [...prev, botMessage]);
+    } catch (error) {
+      console.error("Failed to fetch response:", error);
+      // Send error message to user
+      const errorMessage: Message = {
+        id: Date.now().toString(),
+        content: "Desculpe, ocorreu um erro ao processar sua mensagem. Por favor, tente novamente mais tarde.",
+        sender: "bot",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
       setIsTyping(false);
-    }, 1000);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -109,7 +124,7 @@ const Chatbot: React.FC = () => {
           <Card className="max-w-4xl mx-auto shadow-lg p-4 md:p-6 bg-white">
             <div className="mb-4 pb-4 border-b">
               <h1 className="text-2xl font-bold flex items-center">
-                <span className="text-furia-orange mr-2">FURIA</span> Chatbot
+                <span className="text-furia-gold mr-2">FURIA</span> Chatbot
               </h1>
               <p className="text-gray-500">
                 Olá, {registrationData.personalInfo.name}! Pergunte sobre a FURIA, nossos jogadores, próximos campeonatos e mais!
@@ -127,11 +142,11 @@ const Chatbot: React.FC = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-lg ${
                       message.sender === "user"
-                        ? "bg-furia-orange text-white"
+                        ? "bg-furia-gold text-white"
                         : "bg-white border border-gray-200"
                     }`}
                   >
-                    <p>{message.content}</p>
+                    <p className="whitespace-pre-line">{message.content}</p>
                     <p
                       className={`text-xs mt-1 ${
                         message.sender === "user"
@@ -173,7 +188,8 @@ const Chatbot: React.FC = () => {
               />
               <Button
                 onClick={handleSendMessage}
-                className="bg-furia-orange hover:bg-furia-orange/90"
+                className="bg-furia-gold hover:bg-furia-gold/90"
+                disabled={isTyping}
               >
                 Enviar
               </Button>
