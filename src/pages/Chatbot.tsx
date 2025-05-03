@@ -142,7 +142,7 @@ const Chatbot: React.FC = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-lg ${
                       message.sender === "user"
-                        ? "bg-furia-gold text-white"
+                        ? "bg-white border border-gray-200"
                         : "bg-white border border-gray-200"
                     }`}
                   >
@@ -150,7 +150,7 @@ const Chatbot: React.FC = () => {
                     <p
                       className={`text-xs mt-1 ${
                         message.sender === "user"
-                          ? "text-white/70"
+                          ? "text-gray-500"
                           : "text-gray-500"
                       }`}
                     >
@@ -188,7 +188,7 @@ const Chatbot: React.FC = () => {
               />
               <Button
                 onClick={handleSendMessage}
-                className="bg-furia-gold hover:bg-furia-gold/90"
+                className="bg-furia-orange hover:bg-furia-orange/90 text-white"
                 disabled={isTyping}
               >
                 Enviar

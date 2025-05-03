@@ -1,58 +1,59 @@
-# Bem-vindo ao meu projeto
+Portal Fúria
+O Portal Fúria é uma aplicação web moderna desenvolvida com foco em desempenho e escalabilidade. Utilizando tecnologias como Vite, Tailwind CSS e TypeScript, este projeto oferece uma base sólida para desenvolvimento frontend eficiente.
 
-O único requisito é ter o Node.js e o npm instalados – instale com nvm
+🚀 Tecnologias Utilizadas
+Vite — Empacotador de módulos rápido e moderno
 
-Siga estes passos:
+Tailwind CSS — Framework CSS utilitário para estilização rápida
 
-sh
+TypeScript — Superset do JavaScript que adiciona tipagem estática
+
+PostCSS — Ferramenta para transformação de estilos CSS
+
+ESLint — Ferramenta de linting para manter a qualidade do código
+
+Bun — Runtime JavaScript moderno e rápido (opcional)
+
+📁 Estrutura do Projeto
+bash
 Copiar
 Editar
-# Etapa 1: Clone o repositório usando a URL do Git do projeto.
-git clone <SUA_URL_DO_GIT>
+portal-furia/
+├── public/                 # Arquivos públicos acessíveis diretamente
+├── src/                    # Código-fonte principal da aplicação
+│   ├── components/         # Componentes reutilizáveis
+│   ├── pages/              # Páginas da aplicação
+│   └── ...                 # Outros diretórios e arquivos
+├── index.html              # Arquivo HTML principal
+├── package.json            # Gerenciador de dependências e scripts
+├── tailwind.config.ts      # Configuração do Tailwind CSS
+├── tsconfig.json           # Configuração do TypeScript
+└── vite.config.ts          # Configuração do Vite
+🛠️ Instalação e Uso
+Clone o repositório:
 
-# Etapa 2: Vá até o diretório do projeto.
-cd <NOME_DO_SEU_PROJETO>
+bash
+Copiar
+Editar
+git clone https://github.com/moreira-m98/portal-furia.git
+cd portal-furia
+Instale as dependências:
 
-# Etapa 3: Instale as dependências necessárias.
-npm i
+bash
+Copiar
+Editar
+npm install
+Inicie o servidor de desenvolvimento:
 
-# Etapa 4: Inicie o servidor de desenvolvimento com recarregamento automático e visualização instantânea.
+bash
+Copiar
+Editar
 npm run dev
-Editar um arquivo diretamente no GitHub
+A aplicação estará disponível em http://localhost:5173/ (ou outra porta especificada).
 
-Vá até o(s) arquivo(s) desejado(s).
+📦 Scripts Disponíveis
+npm run dev — Inicia o servidor de desenvolvimento com recarregamento automático
 
-Clique no botão "Editar" (ícone de lápis) no canto superior direito da visualização do arquivo.
+npm run build — Cria uma versão otimizada para produção
 
-Faça suas alterações e confirme (commit) as mudanças.
-
-Usar o GitHub Codespaces
-
-Vá até a página principal do seu repositório.
-
-Clique no botão "Code" (botão verde) próximo ao canto superior direito.
-
-Selecione a aba "Codespaces".
-
-Clique em "New codespace" para iniciar um novo ambiente Codespace.
-
-Edite os arquivos diretamente no Codespace e, ao terminar, commit e envie (push) suas alterações.
-
-Quais tecnologias são usadas neste projeto?
-Este projeto foi construído com:
-
-Vite
-
-TypeScript
-
-React
-
-shadcn-ui
-
-Tailwind CSS
-
-Como posso publicar (deploy) este projeto?
-
-Para conectar um domínio, vá até Projeto > Configurações > Domínios e clique em "Conectar Domínio".
-
-Leia mais aqui: Configurando um domínio personalizado
+npm run lint — Analisa o código em busca de problemas
