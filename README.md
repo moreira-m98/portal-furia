@@ -1,23 +1,19 @@
-Portal Fúria
-O Portal Fúria é uma aplicação web moderna desenvolvida com foco em desempenho e escalabilidade. Utilizando tecnologias como Vite, Tailwind CSS e TypeScript, este projeto oferece uma base sólida para desenvolvimento frontend eficiente.
+# Portal Fúria
 
-🚀 Tecnologias Utilizadas
-Vite — Empacotador de módulos rápido e moderno
+O **Portal Fúria** é uma aplicação web moderna desenvolvida com foco em desempenho e escalabilidade. Utilizando tecnologias como Vite, Tailwind CSS e TypeScript, este projeto oferece uma base sólida para desenvolvimento frontend eficiente.
 
-Tailwind CSS — Framework CSS utilitário para estilização rápida
+## 🚀 Tecnologias Utilizadas
 
-TypeScript — Superset do JavaScript que adiciona tipagem estática
+- [Vite](https://vitejs.dev/) — Empacotador de módulos rápido e moderno
+- [Tailwind CSS](https://tailwindcss.com/) — Framework CSS utilitário para estilização rápida
+- [TypeScript](https://www.typescriptlang.org/) — Superset do JavaScript que adiciona tipagem estática
+- [PostCSS](https://postcss.org/) — Ferramenta para transformação de estilos CSS
+- [ESLint](https://eslint.org/) — Ferramenta de linting para manter a qualidade do código
+- [Bun](https://bun.sh/) — Runtime JavaScript moderno e rápido (opcional)
 
-PostCSS — Ferramenta para transformação de estilos CSS
+## 📁 Estrutura do Projeto
 
-ESLint — Ferramenta de linting para manter a qualidade do código
-
-Bun — Runtime JavaScript moderno e rápido (opcional)
-
-📁 Estrutura do Projeto
-bash
-Copiar
-Editar
+```bash
 portal-furia/
 ├── public/                 # Arquivos públicos acessíveis diretamente
 ├── src/                    # Código-fonte principal da aplicação
@@ -29,31 +25,33 @@ portal-furia/
 ├── tailwind.config.ts      # Configuração do Tailwind CSS
 ├── tsconfig.json           # Configuração do TypeScript
 └── vite.config.ts          # Configuração do Vite
-🛠️ Instalação e Uso
-Clone o repositório:
+```
 
-bash
-Copiar
-Editar
-git clone https://github.com/moreira-m98/portal-furia.git
-cd portal-furia
-Instale as dependências:
+## 🛠️ Instalação e Uso
 
-bash
-Copiar
-Editar
-npm install
-Inicie o servidor de desenvolvimento:
+1. **Clone o repositório:**
 
-bash
-Copiar
-Editar
-npm run dev
-A aplicação estará disponível em http://localhost:5173/ (ou outra porta especificada).
+   ```bash
+   git clone https://github.com/moreira-m98/portal-furia.git
+   cd portal-furia
+   ```
 
-📦 Scripts Disponíveis
-npm run dev — Inicia o servidor de desenvolvimento com recarregamento automático
+2. **Instale as dependências:**
 
-npm run build — Cria uma versão otimizada para produção
+   ```bash
+   npm install
+   ```
 
-npm run lint — Analisa o código em busca de problemas
+3. **Inicie o servidor de desenvolvimento:**
+
+   ```bash
+   npm run dev
+   ```
+
+   A aplicação estará disponível em `http://localhost:5173/`.
+
+## 📦 Scripts Disponíveis
+
+- `npm run dev` — Inicia o servidor de desenvolvimento
+- `npm run build` — Cria uma versão otimizada para produção
+- `npm run lint` — Analisa o código em busca de problemas
