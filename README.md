@@ -1,6 +1,6 @@
 # Portal Fúria
 
-O **Portal Fúria** é uma aplicação web moderna desenvolvida com foco em desempenho e escalabilidade. Utilizando tecnologias como Vite, Tailwind CSS e TypeScript, este projeto oferece uma base sólida para desenvolvimento frontend eficiente.
+O **Portal Fúria** é uma aplicação web moderna desenvolvida com foco em desempenho e escalabilidade. Utilizando tecnologias como Vite, Tailwind CSS e TypeScript, este projeto oferece uma base sólida para desenvolvimento frontend eficiente. Além desse portal você pode acessar a segunda parte desse projeto [aqui](https://github.com/moreira-m98/furia-api), um chatbot com IA voltado para Fúria.
 
 ## 🚀 Tecnologias Utilizadas
 
